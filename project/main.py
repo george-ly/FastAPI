@@ -40,6 +40,10 @@ def home():
     </html>
     """
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
 @app.post("/start-call")
 def start_call(req: CallRequest):
     # replace this with your Retell/Vapi outbound-call API request
@@ -47,6 +51,8 @@ def start_call(req: CallRequest):
         "status": "ok",
         "message": f"Would place outbound call to {req.phone_number}"
     }
+
+
 
 if __name__ == "__main__":
     import uvicorn
