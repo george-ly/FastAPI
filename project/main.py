@@ -15,10 +15,10 @@ def home():
     <html>
       <head>
         <meta charset="utf-8" />
-        <title>AI Interview Demo</title>
+        <title>AI Resume Interviewer</title>
       </head>
       <body>
-        <h1>AI Interview Demo</h1>
+        <h1>AI Resume Interviewer</h1>
         <input id="phone" placeholder="+44..." />
         <button onclick="startCall()">Start Call</button>
         <pre id="output"></pre>
